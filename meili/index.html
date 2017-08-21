@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="../js/fn.js"></script>
+    <script >
+        window.onload = function(){
+            var oBox = document.querySelector('.right_top');
+            var oUl = oBox.querySelector('ul');
+            var oOl = oBox.querySelector('ol');
+            var aLi = oUl.querySelectorAll('li');
+            var aBtn = oOl.querySelectorAll('li');
+            var oPre = oBox.querySelector('.pre');
+            var oNext = oBox.querySelector('.next');
+            carsouel(oBox,oUl,aLi,aBtn,oPre,oNext);
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+	<!----头部开始---->
+	<div class="head">
+    	<!-----登陆条开始---->
+    	<div class="loginbar">
+        	<ul class="fr clearfix">
+            	<li>
+                	<i class="icon weixin fl"></i>
+                	<a href="javascript:;">微信登陆</a>
+                </li>
+                <li>
+                	<i class="icon QQ fl"></i>
+                	<a href="javascript:;">QQ登陆</a>
+                </li>
+                <li>
+                	<a href="javascript:;">登陆</a>
+                </li>
+                <li>
+                	<a href="javascript:;">注册</a>
+                </li>
+                <li>
+                	<i class="icon car fl"></i>
+                	<a href="javascript:;">我的购物车</a>
+                    <i class="num fl">0</i>
+                </li>
+                <li>
+                	<i class="icon page fl"></i>
+                	<a href="javascript:;">我的订单</a>
+                </li>
+                <li>
+                	<i class="icon hg fl"></i>
+                	<a href="javascript:;">美丽说会员</a>
+                </li>
+                <li>
+                	<i class="icon phone fl"></i>
+                	<a href="javascript:;">下载APP</a>
+                    <i class="icon sanjiao fl"></i>
+                </li>
+                <li>
+                	<a href="javascript:;">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <!----登陆条结束---->
+        <!-----搜索框开始---->
+        <div class="search clearfix">
+            <!----logo---->
+            <h1 class="fl"><a href="javascript:;" class="logo"></a></h1>
+            <!----搜索框----->
+            <div class="soo">
+            	<!-----btn------>
+            	<div class="btn clearfix">
+            	<a href="javascript:;" class="fl active">宝贝</a>
+                <a href="javascript:;" class="fl">店铺</a>
+                </div>
+            	<!-----input---->
+            	<div class="search_ipt clearfix">
+            		<input type="text" class="fl" placeholder="搜流行宝贝">
+                	<a href="javascript:;" class="fl"></a>
+                </div>
+        	</div>
+            <!----higo----->
+            <a href="javascript:;" class="higo fr"></a>
+		<!-----搜索框结束---->
+        </div>
+    </div>
+    <!-----头部结束---->
+    
+    <!-----内容开始----->
+    <div class="cen">
+    	<!-----banner开始----->
+    	<div class="banner">
+        	<ul class="banner_nav clearfix">
+            	<li><a href="javascript:;" class="active">首页</a></li>
+                <li><a href="javascript:;">最热</a></li>
+                <li><a href="javascript:;">上衣</a></li>
+                <li><a href="javascript:;">裙子</a></li>
+                <li><a href="javascript:;">裤子</a></li>
+                <li><a href="javascript:;">鞋子</a></li>
+                <li><a href="javascript:;">包包</a></li>
+                <li><a href="javascript:;">配饰</a></li>
+                <li><a href="javascript:;">内衣</a></li>
+                <li><a href="javascript:;">美妆</a></li>
+                <li><a href="javascript:;">男装</a></li>
+                <li><a href="javascript:;">童装</a></li>
+                <li><a href="javascript:;">家居</a></li>
+                <li><a href="javascript:;">小家电</a></li>
+                <li><a href="javascript:;">食品</a></li>
+            </ul>
+            <div class="banner_box clearfix">
+        		<ul class="box_left fl">
+                	<li>
+                    	<h3>每日精选</h3>
+                        <div class="clearfix">
+                        	<a href="javascript:;">秋冬新品</a>
+                            <a href="javascript:;">魅力性感</a>
+                            <a href="javascript:;">毛呢外套</a>
+                            <a href="javascript:;">时尚套装</a>
+                            <a href="javascript:;">牛仔裤</a>
+                            <a href="javascript:;">短靴</a>
+                            <a href="javascript:;">运动鞋</a>
+                            <a href="javascript:;">热销零食</a>
+                            <a href="javascript:;">韩货选购</a>
+                        </div>
+                    </li>
+                    <li>
+                    	<h3>2015流行</h3>
+                        <div class="clearfix">
+                        	<a href="javascript:;">街头混搭</a>
+                            <a href="javascript:;">极简风</a>
+                            <a href="javascript:;">宽松直筒裙</a>
+                            <a href="javascript:;">中长款外套</a>
+                            <a href="javascript:;">皮革</a>
+                            <a href="javascript:;">鹿皮</a>
+                            <a href="javascript:;">动物纹</a>
+                            <a href="javascript:;">蝴蝶结</a>
+                            <a href="javascript:;">流苏</a>
+                            <a href="javascript:;">冰浅色</a>
+                        </div>
+                    </li>
+                    <li>
+                    	<h3>时尚经典</h3>
+                        <div class="clearfix">
+                        	<a href="javascript:;">韩系</a>
+                            <a href="javascript:;">小香风</a>
+                            <a href="javascript:;">学院风</a>
+                            <a href="javascript:;">条纹</a>
+                            <a href="javascript:;">千鸟格</a>
+                            <a href="javascript:;">毛呢</a>
+                            <a href="javascript:;">针织</a>
+                            <a href="javascript:;">黑色</a>
+                            <a href="javascript:;">灰色</a>
+                            <a href="javascript:;">中国红</a>
+                            <a href="javascript:;">樱花粉</a>
+                        </div>
+                    </li>
+                    <li>
+                    	<h3>实穿百搭</h3>
+                        <div class="clearfix">
+                        	<a href="javascript:;">呢大衣</a>
+                            <a href="javascript:;">收腰棉衣</a>
+                            <a href="javascript:;">廓形毛衣</a>
+                            <a href="javascript:;">针织开衫</a>
+                            <a href="javascript:;">双排扣外套</a>
+                            <a href="javascript:;">针织背心裙</a>
+                            <a href="javascript:;">纯色打底裤</a>
+                        </div>
+                    </li>
+                    <li style="border:none;">
+                    	<h3>百变廓形</h3>
+                        <div class="clearfix">
+                        	<a href="javascript:;">收腰</a>
+                            <a href="javascript:;">宽松</a>
+                            <a href="javascript:;">紧身</a>
+                            <a href="javascript:;">直筒</a>
+                            <a href="javascript:;">A字</a>
+                            <a href="javascript:;">H型</a>
+                            <a href="javascript:;">X型</a>
+                            <a href="javascript:;">S型</a>
+                            <a href="javascript:;">T型</a>
+                            <a href="javascript:;">I型</a>
+                            <a href="javascript:;">O型</a>
+                            <a href="javascript:;">短款</a>
+                            <a href="javascript:;">长款</a>
+                            <a href="javascript:;">茧型</a>
+                            <a href="javascript:;">阔口</a>
+                        </div>
+                    </li>
+           	 	</ul>
+           	 	<div class="box_right fr">
+                	<!----右上----->
+                	<div class="right_top">
+                    	<a href="javascript:;" class="pre"><</a>
+                    	<a href="javascript:;" class="next">></a>
+
+                        <ul>
+                            <li><img src="img/car1.png" alt="car1.png"/></li>
+                            <li><img src="img/car2.png" alt="car2.png"/></li>
+                            <li><img src="img/car3.png" alt="car3.png"/></li>
+                            <li><img src="img/car4.png" alt="car4.png"/></li>
+                            <li><img src="img/car5.png" alt="car5.png"/></li>
+                        </ul>
+                        <ol>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+                    <!----右下---->
+                  	<div class="right_bom clearfix">
+                			<a hef="javascript:;" style="background:url(img/bom1.png) no-repeat;"></a>
+                        	<a hef="javascript:;" style="background:url(img/bom2.png) no-repeat;"></a>
+                        	<a hef="javascript:;" style="background:url(img/bom3.png) no-repeat;"></a>
+                        	<a hef="javascript:;" style="background:url(img/bom4.png) no-repeat;"></a>
+                        	<a hef="javascript:;" style="background:url(img/bom5.png) no-repeat;"></a>
+                	</div>
+            	</div>
+                
+        	</div>     
+        <!------banner结束----->
+            
+        <!------d1疯狂星期5 开始---->
+         <div class="d1"> 
+        	<h3>疯狂星期5</h3>
+        	<h4>正确流行 新款大促</h4>
+            <a href="javascript:;" class="btn">
+                往期回顾
+            </a>
+             
+            <ul class="clearfix">   
+                <li class="clearfix fl">
+                    <a href="javascript:;" class="b" style="background:url(img/d1_b1.png) no-repeat;"></a>
+                    <a href="javascript:;"><img src="img/d1_b1_s1.png"/></a>
+                    <a href="javascript:;"><img src="img/d1_b1_s2.png"/></a>
+                    <a href="javascript:;"><img src="img/d1_b1_s3.png"/></a>
+                </li>
+                <li class="mid clearfix fl">
+                    <a href="javascript:;" class="b" style="background:url(img/d1_b2.png) no-repeat;"></a>
+                    <a href="javascript:;"><img src="img/d1_b2_s1.png"/></a>
+                    <a href="javascript:;"><img src="img/d1_b2_s2.png"/></a>
+                    <a href="javascript:;"><img src="img/d1_b2_s3.png"/></a>
+                </li>
+                <li class="clearfix fl">
+                    <a href="javascript:;" class="b" style="background:url(img/d1_b3.png) no-repeat;"></a>
+                    <a href="javascript:;"><img src="img/d1_b3_s1.png"/></a>
+                    <a href="javascript:;" class="mid"><img src="img/d1_b3_s2.png"/></a>
+                    <a href="javascript:;"><img src="img/d1_b3_s3.png"/></a>
+                </li>
+             </ul>
+        </div>  
+             
+        <!----d2 疯狂星期5---->
+        <div class="d2">
+             <h3>疯狂星期5</h3>
+             <h4>疯狂新款</h4>   
+             <ul class="clearfix">
+                <li><a href="javascript:;"><img src="img/d2_b1.png"/></a></li>
+                <li><a herf="javascript:;"><img src="img/d2_b2.png"/></a></li>
+                <li><a href="javascript:;"><img src="img/d2_b3.png"/></a></li>
+                <li><a href="javascript:;"><img src="img/d2_b4.png"/></a></li>
+                <li><a href="javascript:;"><img src="img/d2_b5.png"/></a></li>
+                <li class="last"><a href="javascript:;"><img src="img/d2_b6.png"/></a></li>
+             </ul>
+        </div>
+             
+        <!---d3新品精选--->
+        <div class="d3">
+        	<h3>新品精选</h3>
+           	<h4>尖货来袭 要你好看</h4>
+            <a href="javascript:;" class="btn">
+            	更多新品
+            </a>
+            <ul class="clearfix">
+            	<li>
+                	<a href="javascript:;"><img src="img/d3_b1.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b2.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥69.96</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">格子长款包臀毛呢半身裙</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b3.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥75.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li class="last">
+                	<a href="javascript:;"><img src="img/d3_b4.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥133.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b5.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥512.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b6.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥39.90</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b7.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥59.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b8.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥168.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b9.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥277.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li class="last">
+                	<a href="javascript:;"><img src="img/d3_b10.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥76.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>      
+        	</ul>
+        </div>
+             
+        <!-----d4明星同款--->
+        <div class="d4">
+             <h3>Desire明星同款</h3>
+             <h4>明星热捧最IN单品</h4>
+             <a href="javascript:;" class="btn">
+                更多明星同款
+             </a>
+                
+             <ul class="clearfix">
+                <li>
+                    <a href="javascript:;"><img src="img/d4_b1.png"/></a>
+                    <p class="p1">
+                        <span>DESIRE价:</span>
+                        <i>￥209.10</i>
+                        <b>原款价：￥1,650.00</b>
+                    </p>
+                    <p class="p2">Samantha Thavasa同款经典锁头包</p>
+                    <p class="p3">[日本的香奈儿]VIVI杂志多个模特秀,LENE也秀!!韩国少女时代,尹恩惠还有米兰达·可儿也有代言哦~年底种”趴“都能用的上</p>
+                </li>
+                <li class="mid">
+                    <a href="javascript:;"><img src="img/d4_b2.png"/></a>
+                    <p class="p1">
+                        <span>DESIRE价:</span>
+                        <i>￥209.10</i>
+                        <b>原款价：￥1,650.00</b>
+                    </p>
+                    <p class="p2">Samantha Thavasa同款经典锁头包</p>
+                    <p class="p3">[日本的香奈儿]VIVI杂志多个模特秀,LENE也秀!!韩国少女时代,尹恩惠还有米兰达·可儿也有代言哦~年底种”趴“都能用的上</p>
+                </li>
+                <li class="last">
+                    <a href="javascript:;"><img src="img/d4_b3.png"/></a>
+                    <p class="p1">
+                        <span>DESIRE价:</span>
+                        <i>￥209.10</i>
+                        <b>原款价：￥1,650.00</b>
+                    </p>
+                    <p class="p2">Samantha Thavasa同款经典锁头包</p>
+                    <p class="p3">[日本的香奈儿]VIVI杂志多个模特秀,LENE也秀!!韩国少女时代,尹恩惠还有米兰达·可儿也有代言哦~年底种”趴“都能用的上</p>
+                </li>
+             </ul>
+          </div>
+             
+        <!----d5时尚美妆----->
+        <div class="d5">
+             <h3>时尚美妆</h3>
+             <h4>优选品牌 明星爆款</h4>
+             <a href="javascript:;" class="btn">
+                更多美妆
+             </a>
+                
+             <ul class="clearfix">
+                <li>
+                    <a href="javascript:;"><img src="img/d5_b1.png"/></a>
+                    <p class="p1">￥6.20</p>
+                    <p class="p2">夜间酵素单包</p>
+                    <p class="p3">【跳5遍郑多燕，也不如吃一袋它】游泳，跑步，郑多燕...拼了老命地运动，只为了变瘦变美。嘘！告诉你心机美人不能说的瘦身秘密，这款加强</p>
+                    <p class="p4">
+                        <a href="javascript:;">减肥</a>
+                        <a href="javascript:;">排毒</a>
+                        <a href="javascript:;">新谷</a>
+                    </p>
+                </li>
+                <li class="mid">
+                    <a href="javascript:;"><img src="img/d5_b2.png"/></a>
+                    <p class="p1">￥6.20</p>
+                    <p class="p2">夜间酵素单包</p>
+                    <p class="p3">【跳5遍郑多燕，也不如吃一袋它】游泳，跑步，郑多燕...拼了老命地运动，只为了变瘦变美。嘘！告诉你心机美人不能说的瘦身秘密，这款加强</p>
+                    <p class="p4">
+                        <a href="javascript:;">减肥</a>
+                        <a href="javascript:;">排毒</a>
+                        <a href="javascript:;">新谷</a>
+                    </p>
+                </li>
+				<li>
+                    <a href="javascript:;"><img src="img/d5_b3.png"/></a>
+                    <p class="p1">￥6.20</p>
+                    <p class="p2">夜间酵素单包</p>
+                    <p class="p3">【跳5遍郑多燕，也不如吃一袋它】游泳，跑步，郑多燕...拼了老命地运动，只为了变瘦变美。嘘！告诉你心机美人不能说的瘦身秘密，这款加强</p>
+                    <p class="p4">
+                        <a href="javascript:;">减肥</a>
+                        <a href="javascript:;">排毒</a>
+                        <a href="javascript:;">新谷</a>
+                    </p>
+                </li>
+             </ul> 
+         </div>
+             
+        <!----d6好店推荐---->
+         <div class="d6">
+             <h3>好店推荐</h3>
+             <h4>店铺精选 品质保证</h4>
+             <a href="javascript:;" class="btn">
+                更多好店
+             </a>
+                
+             <div class="nav">
+                <a href="javascript:;" class="active">魅力女装</a>
+                <a href="javascript:;">时尚包包</a>
+                <a href="javascript:;">潮流美鞋</a>
+                <a href="javascript:;">必备小物</a>
+                <a href="javascript:;" class="last">精品男装</a>
+             </div>
+                
+             <ul class="clearfix">
+                	<li>
+                    	<div class="clearfix">
+                    		<a href="javascript:;" class="b"><img src="img/d6_b1.png"/></a>
+                        	<a href="javascript:;" class="s"><img src="img/d6_b1_s1.png"/></a>
+                        	<a href="javascript:;" class="s s2"><img src="img/d6_b1_s2.png"/></a>
+                        </div>
+                        <p class="p1">宠儿自制-原创女装店</p>
+                        <p class="p2">宠儿自制，自主设计生产，自有工厂，为您提供优质的商品及服务！</p>
+                        <p class="p3">
+                        	<i>销量<span>130796</span></i>
+                            <b>评分<span>4.9</span></b>
+                        </p>
+                    </li>
+                    <li class="mid">
+                    	<div class="clearfix">
+                    		<a href="javascript:;" class="b"><img src="img/d6_b2.png"/></a>
+                        	<a href="javascript:;" class="s"><img src="img/d6_b2_s1.png"/></a>
+                        	<a href="javascript:;" class="s s2"><img src="img/d6_b2_s2.png"/></a>
+                        </div>
+                        <p class="p1">宠儿自制-原创女装店</p>
+                        <p class="p2">宠儿自制，自主设计生产，自有工厂，为您提供优质的商品及服务！</p>
+                        <p class="p3">
+                        	<i>销量<span>130796</span></i>
+                            <b>评分<span>4.9</span></b>
+                        </p>
+                    </li>
+                    <li>
+                    	<div class="clearfix">
+                    		<a href="javascript:;" class="b"><img src="img/d6_b3.png"/></a>
+                        	<a href="javascript:;" class="s"><img src="img/d6_b3_s1.png"/></a>
+                        	<a href="javascript:;" class="s s2"><img src="img/d6_b3_s2.png"/></a>
+                        </div>
+                        <p class="p1">宠儿自制-原创女装店</p>
+                        <p class="p2">宠儿自制，自主设计生产，自有工厂，为您提供优质的商品及服务！</p>
+                        <p class="p3">
+                        	<i>销量<span>130796</span></i>
+                            <b>评分<span>4.9</span></b>
+                        </p>
+                   </li>
+             </ul>
+         </div>
+             
+        <!----d7为你精选--->
+        <div class="d7">
+            <h3>为你精选</h3>
+            <h4>为你精挑细选的宝贝</h4>
+            <a href="javascript:;" class="btn">
+                换一批
+            </a>
+            <ul class="clearfix">
+             	<li>
+                	<a href="javascript:;"><img src="img/d3_b1.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b2.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b3.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li class="last">
+                	<a href="javascript:;"><img src="img/d3_b4.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b5.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b6.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b7.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b8.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li>
+                	<a href="javascript:;"><img src="img/d3_b9.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                <li class="last">
+                	<a href="javascript:;"><img src="img/d3_b10.png"/></a>
+                    <p class="price clearfix">
+                    	<i class="fl">￥110.00</i>
+                        <b class="fr">2355</b>
+                   	</p>
+                    <p class="title">秋冬蝙蝠袖波浪边短款外套</p>
+                </li>
+                    
+             </ul>
+        </div>
+             
+    </div>
+    <!-----内容结束----->
+    
+    <!-----页脚开始---->
+    <div class="foot1 clearfix">
+    	<div class="contact">
+        	<img src="img/tele.png"/>
+        	<p class="p1">4000-800-577</p>
+            <p class="p2">美丽说客服热线</p>
+            <p class="p3">周一至周日：<span>08:00-24:00</span></p>
+        </div>
+        <dl>
+        	<dt><a href="javascript:;">买家帮助</a></dt>
+            <dd><a href="javascript:;">新手指南</a></dd>
+            <dd><a href="javascript::">服务保障</a></dd>
+            <dd><a href="javascript:;">保障中心</a></dd>
+        </dl>
+        <dl>
+        	<dt><a href="javascript:;">商家帮助</a></dt>
+            <dd><a href="javascript:;">商家入驻</a></dd>
+            <dd><a href="javascript::">商家推广</a></dd>
+            <dd><a href="javascript:;">帮助中心</a></dd>
+        </dl>
+        <dl>
+        	<dt><a href="javascript:;">关于我们</a></dt>
+            <dd><a href="javascript:;">关于美丽说</a></dd>
+            <dd><a href="javascript::">联系我们</a></dd>
+            <dd><a href="javascript:;">加入美丽说</a></dd>
+        </dl>
+        <dl class="dl4">
+        	<dt><a href="javascript:;">关注我们</a></dt>
+            <dd>
+            	<a href="javascript:;">
+                	<div style="background:url(img/sina.png) no-repeat 0 -1px;"></div>
+                    新浪微博
+                </a> 
+            </dd>
+            <dd>
+            	<a href="javascript:;">
+                	<div style="background:url(img/kj.png) no-repeat 0 -1px;"></div>
+                    QQ空间
+                </a> 
+            </dd>
+            <dd>
+            	<a href="javascript:;">
+                	<div style="background:url(img/tx.png) no-repeat 0 -1px;"></div>
+                    腾讯微博
+                </a> 
+            </dd>
+        </dl>
+        <div class="ewm">
+        	<p>美丽说微信服务号</p>
+            <img src="img/ewm.png"/>
+        </div>
+        
+    </div>
+    
+    <div class="foot2">
+    	<span>友情链接：</span>
+    	<a href="javascript:;">腾讯女性</a>
+        <a href="javascript:;">列表网</a>
+        <a href="javascript:;">太平洋女性网</a>
+        <a href="javascript:;">多宝汇</a>
+        <a href="javascript:;">七丽女性网</a>
+        <a href="javascript:;">酷我音乐</a>
+        <a href="javascript:;">LADYMAX时尚网</a>
+        <a href="javascript:;">保葫芦</a>
+        <a href="javascript:;">中国品牌服装网</a>
+        <a href="javascript:;">优美网</a>
+        <a href="javascript:;">男士时尚</a>
+        <a href="javascript:;">哈秀时尚秀</a>
+    </div>
+    
+    <div class="foot3">
+    	<P>Copyright C2015 Meilishuo.com 电信与信息服务业务经营许可证100798号 经营性网站备案信息 京ICP备11031139号 京安网安备110108006045</P>
+        <P>客服邮箱：kf@meilishuo.com 客服电话：4000-800-577 文明办网文明上网举报电话：010-82615762 违法不良信息举报中心 我最喜爱的人民警察评选>>反诈骗信息</P>
+    </div>
+    
+    <!-----页脚结束---->
+    
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="style.css"/>
+    <script src="../js/fn.js"></script>
+    <script>
+        window.onload = function(){
+            var oBox = document.querySelector('.banner');
+            var oUl = oBox.querySelector('ul');
+            var oOl = oBox.querySelector('ol');
+            var aLi = oUl.children;
+            var aBtn = oOl.children;
+            var oPre = oBox.querySelector('.pre');
+            var oNext = oBox.querySelector('.next');
+            carsouel(oBox,oUl,aLi,aBtn,oPre,oNext);
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+	<!----loginbar---->
+	<div class="loginbar clearfix">
+    	<div class="left fl">
+        	<a href="javascript:;">小米网</a>
+            <a href="javascript:;">MIUI</a>
+            <a href="javascript:;">米聊</a>
+            <a href="javascript:;">游戏</a>
+            <a href="javascript:;">多看阅读</a>
+            <a href="javascript:;">云服务</a>
+            <a href="javascript:;">小米网移动版</a>
+            <a href="javascript:;">问题反馈</a>
+            <a href="javascript:;">Select Region</a>
+        </div>
+        <div class="right fr">
+        	<a href="javascript:;" class="login fl">登陆</a>
+            <a href="javascript:;" class="regist fl">注册</a>
+            <a href="javascript:;" class="car clearfix">
+            	<i class="fl"></i>
+                <span class="fl">购物车（0）</span>
+            </a>
+        </div>
+    </div>
+    <!----header----->
+    <div class="header">
+    	<div class="nav">
+        	<h1 class="logo fl"><a href="javascript:;"></a></h1>
+            <div class="nav_btn fl">
+            	<a href="javascript:;">小米手机</a>
+                <a href="javascript:;">红米</a>
+                <a href="javascript:;">平板</a>
+                <a href="javascript:;">电视^盒子</a>
+                <a href="javascript:;">路由器</a>
+                <a href="javascript:;">智能硬件</a>
+                <a href="javascript:;">服务</a>
+                <a href="javascript:;">社区</a>
+            </div>
+            <div class="search fr clearfix">
+            	<div class="soo fl clearfix">
+            		<input type="text" class="fl"/>
+                	<div class="fl">
+                    	<a href="javascript:;" class="fl">手环</a>
+                    	<a href="javascript:;" class="fl">小米手机4</a>
+                	</div>
+                </div>
+                <a href="javascript:;" class="img fl"></a>
+            </div> 
+        </div>
+        <div class="banner">
+        	<div class="sidebar fl">
+            	<a href="javascript:;" class="clearfix">
+                	<span class="fl">手机 平板 电话卡</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">电视 盒子</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">路由器 智能硬件</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">移动电源 插线板</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">耳机 音箱</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">电池 存储卡</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">保护套 后盖</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">贴膜 其他配件</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">米兔 服装</span>
+                    <i class="fl"></i>
+                </a>
+                <a href="javascript:;" class="clearfix">
+                	<span class="fl">箱包 其他周边</span>
+                    <i class="fl"></i>
+                </a>
+            </div>
+
+            <a href="javascript:;" class="pre fl"><</a>
+            <a href="javascript:;" class="next fl">></a>
+            <ul class="banul fl">
+                <li class="active"><img src="img/car1.jpg" alt="car1.jpg"/></li>
+                <li><img src="img/car2.jpg" alt="car2.jpg"/></li>
+                <li><img src="img/car3.jpg" alt="car3.jpg"/></li>
+                <li><img src="img/car4.jpg" alt="car4.jpg"/></li>
+                <li><img src="img/car5.jpg" alt="car5.jpg"/></li>
+            </ul>
+            <ol class="banol fl">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+
+        </div>
+        <div class="bom clearfix">
+        	<div class="hot fl clearfix">
+            	<a href="javascript:;" style="background:url(img/dx.png) no-repeat 26px 14px;" class="fl">电信专场</a>
+                <a href="javascript:;" style="background:url(img/qy.png) no-repeat 28px 14px;" class="fl">企业团购</a>
+                <a href="javascript:;" style="background:url(img/gf.png) no-repeat 25px 17px;" class="fl">官翻产品</a>
+                <a href="javascript:;" style="background:url(img/xm.png) no-repeat 26px 10px;" class="fl">小米移动</a>
+                <a href="javascript:;" style="background:url(img/hf.png) no-repeat 27px 12px;" class="fl">话费充值</a>
+                <a href="javascript:;" style="background:url(img/fw.png) no-repeat 27px 13px;" class="fl">防伪查询</a>
+            </div>
+            <a href="javascript:;" class="fl" style="margin-left:7px;"><img src="img/bom1.png"/></a>
+            <a href="javascript:;" class="fl" style="margin-left:14px;"><img src="img/bom2.png"/></a>
+            <a href="javascript:;" class="fl" style="margin-left:14px;"><img src="img/bom3.png"/></a>
+        </div>
+    </div>
+    <!----header结束---->
+    
+    <!------content---->
+    <div class="main clearfix">
+    	<!----main1---->
+    	<div class="main1">
+        	<div class="title clearfix">
+            	<span class="fl">小米明星单品</span>
+                <div class="btn fr clearfix">
+                	<a href="javascript:;" class="prebtn fl"></a>
+                    <a href="javascript:;" class="nextbtn fl"></a>
+                </div>
+            </div>
+            <div class="con clearfix">
+            	<a herf="javascript:;" style="background:url(img/main1_b1.png) no-repeat;" class="fl">
+                	<p class="p1">小米空气净化器</p>
+                    <p class="p2">双风机 净化能力高达406m3/h</p>
+                    <p class="p3">899元</p>
+                </a>
+                <a herf="javascript:;" style="background:url(img/main1_b2.png) no-repeat;" class="fl">
+                	<p class="p1">小米空气净化器</p>
+                    <p class="p2">双风机 净化能力高达406m3/h</p>
+                    <p class="p3">899元</p>
+                </a>
+                <a herf="javascript:;" style="background:url(img/main1_b3.png) no-repeat;" class="fl">
+                	<p class="p1">小米空气净化器</p>
+                    <p class="p2">双风机 净化能力高达406m3/h</p>
+                    <p class="p3">899元</p>
+                </a>
+                <a herf="javascript:;" style="background:url(img/main1_b4.png) no-repeat;" class="fl">
+                	<p class="p1">小米空气净化器</p>
+                    <p class="p2">双风机 净化能力高达406m3/h</p>
+                    <p class="p3">899元</p>
+                </a>
+                <a herf="javascript:;" style="background:url(img/main1_b5.png) no-repeat;" class="last fl">
+                	<p class="p1">小米空气净化器</p>
+                    <p class="p2">双风机 净化能力高达406m3/h</p>
+                    <p class="p3">899元</p>
+                </a>
+            </div>
+        </div>
+        <!-----main1结束--->
+        
+        <div class="main2 clearfix">
+        	<div class="title clearfix">
+            	<span class="fl">智能硬件</span>
+                <a class="btn fr clearfix">
+                	<span class="fl">查看全部</span>
+                    <i class="fl"></i>
+                </a>
+            </div>
+            <div class="con">
+            	<a href="javascript:;" class="first fl"><img src="img/main2_b1.png"/></a>
+                <a href="javascript:;" class="mb fl" style="background:url(img/main2_b2.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="mb fl" style="background:url(img/main2_b3.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="mb fl" style="background:url(img/main2_b4.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="mb fl" style="background:url(img/main2_b5.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main2_b6.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main2_b7.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main2_b8.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main2_b9.png)">
+                	<p class="p1">小米体重秤</p>
+                    <p class="p2">高精度压力传感器 | 手机管理全家健康</p>
+                    <p class="p3">99元</p>
+                </a>
+            </div>    
+        </div>
+        
+        <!----main3开始---->
+        <div class="main3 clearfix">
+        	<div class="title clearfix">
+            	<span class="fl">搭配</span>
+                <div class="list fr clearfix">
+                	<a href="javascript:;">热门</a>
+                    <a href="javascript:;">耳机音响</a>
+                    <a href="javascript:;">电源</a>
+                    <a href="javascript:;">电池存储卡</a>
+                </div>
+            </div>
+            <div class="con">
+            	<a href="javascript:;" class="num1 fl" style="background:url(img/main3_b1.png)">
+                	
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b2.png)">
+                    <i style="text-align:center;" >
+                    	小米活塞耳机 标准版
+                    </i>
+                    <div class="bom title" style="margin-top:136px;">
+                    	<p class="p1">小米活塞耳机 标准</p>
+                    	<p class="p2">66元<b style="text-decoration:line-through;color:#b0b0b0;font-size:12px;margin-left:6px;">99元</b></p>
+                    	<p class="p3">7532人评价</p>
+                    </div> 
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b3.png)">
+                	<i style="padding-left:41px;">
+                    	小米圈铁耳机
+                    </i>
+                    <div class="bom title" style="margin-top:136px;">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                	</div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b4.png)">
+                	<i style="padding-left:41px;">
+                    	<em>小米移动电源</em>
+                        <em>16000mAh</em>
+                    </i>
+                    <div class="bom title" style="margin-top:136px;">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b4.png)">
+                    <i style="padding-left:41px;">
+                    	<em>小米移动电源</em>
+                        <em>10000mAh</em>
+                    </i>
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num6 fl" style="background:url(img/main3_b6.png);margin:0;">
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b7.png)">
+                	<div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                    
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b8.png)">
+                    <div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main3_b9.png)">
+                    <div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num10 fl" style="background:url(img/main3_b10.png) no-repeat;">
+                	<div style="margin-top:45px;margin-left:30px;">
+                     	<p style="font-size:12px;height:27px;">小钢炮蓝牙..</p>
+                    	<p style="font-size:11px;color:#ff6700;">99元</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num11 fl" style="background:url(img/main_more.png) no-repeat;">
+                	<div style="margin-top:55px;margin-left:30px;">
+                    	<p style="font-size:18px;height:25px;">浏览更多</p>
+                    	<p style="font-size:11px;color:#757575;">热门</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        
+        <!-----main4开始----->
+        <div class="main4 clearfix">
+        	<div class="title clearfix">
+            	<span class="fl">配件</span>
+                <div class="list fr clearfix">
+                	<a href="javascript:;">热门</a>
+                    <a href="javascript:;">耳机音响</a>
+                    <a href="javascript:;">电源</a>
+                    <a href="javascript:;">电池存储卡</a>
+                </div>
+            </div>
+            <div class="con">
+            	<a href="javascript:;" class="num1 fl" style="background:url(img/main4_b1.png)">
+                	
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b2.png)">
+                   
+                    <div class="bom title">
+                    	<p class="p1">小米活塞耳机 标准</p>
+                    	<p class="p2">66元</p>
+                    	<p class="p3">7532人评价</p>
+                    </div> 
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b3.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                	</div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b4.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b5.png)">
+                  
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num6 fl" style="background:url(img/main3_b6.png);margin:0;">
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b7.png)">
+                	<div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                    
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b8.png)">
+                    <div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main4_b9.png)">
+                    <div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num10 fl" style="background:url(img/main4_b10.png) no-repeat;">
+                	<div style="margin-top:45px;margin-left:30px;">
+                     	<p style="font-size:12px;height:27px;">小钢炮蓝牙..</p>
+                    	<p style="font-size:11px;color:#ff6700;">99元</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num11 fl" style="background:url(img/main_more.png) no-repeat;">
+                	<div style="margin-top:55px;margin-left:30px;">
+                    	<p style="font-size:18px;height:25px;">浏览更多</p>
+                    	<p style="font-size:11px;color:#757575;">热门</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        <!-----main5开始---->
+        <div class="main5 clearfix">
+        	<div class="title clearfix">
+            	<span class="fl">周边</span>
+                <div class="list fr clearfix">
+                	<a href="javascript:;">热门</a>
+                    <a href="javascript:;">耳机音响</a>
+                    <a href="javascript:;">电源</a>
+                    <a href="javascript:;">电池存储卡</a>
+                </div>
+            </div>
+            <div class="con">
+            	<a href="javascript:;" class="num1 fl" style="background:url(img/main5_b1.png)">
+                	
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b2.png)">
+                   
+                    <div class="bom title">
+                    	<p class="p1">小米活塞耳机 标准</p>
+                    	<p class="p2">66元</p>
+                    	<p class="p3">7532人评价</p>
+                    </div> 
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b3.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                	</div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b4.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b5.png)">
+                  
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num6 fl" style="background:url(img/main3_b6.png);margin:0;">
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b7.png)">
+                	<div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                    
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b8.png)">
+                    <div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main5_b9.png)">
+                    <div class="bom">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num10 fl" style="background:url(img/main5_b10.png) no-repeat;">
+                	<div style="margin-top:45px;margin-left:30px;">
+                     	<p style="font-size:12px;height:27px;">小钢炮蓝牙..</p>
+                    	<p style="font-size:11px;color:#ff6700;">99元</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="num11 fl" style="background:url(img/main_more.png) no-repeat;">
+                	<div style="margin-top:55px;margin-left:30px;">
+                    	<p style="font-size:18px;height:25px;">浏览更多</p>
+                    	<p style="font-size:11px;color:#757575;">热门</p>
+                    </div>
+                </a>
+            </div> 
+        </div>
+        
+        <!----main6开始---->
+        <div class="main6 clearfix">
+        	<div class="title clearfix">
+            	<span class="fl">为你推荐</span>
+                <div class="btn fr clearfix">
+                	<a href="javascript:;" class="prebtn fl"></a>
+                    <a href="javascript:;" class="nextbtn fl"></a>
+                </div>
+            </div>
+            <div class="con">
+            	
+                <a href="javascript:;" class="num1 fl" style="background:url(img/main6_b1.png)">
+                   
+                    <div class="bom title">
+                    	<p class="p1">小米活塞耳机 标准</p>
+                    	<p class="p2">66元</p>
+                    	<p class="p3">7532人评价</p>
+                    </div> 
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main6_b2.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                	</div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main6_b3.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main6_b4.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main6_b5.png)">
+                	
+                    <div class="bom title">
+                    	<p class="p1">小米圈铁耳机</p>
+                    	<p class="p2">99元</p>
+                    	<p class="p3">4120人评价</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!----main7开始---->
+        <div class="main7 clearfix">
+        	<div class="title"><span>为你推荐</span></div>
+            <div class="con">
+        		<a href="javascript:;" class="num1 fl">
+            		<img src="img/main7_b1.png"/>
+                    <div>
+                		<p class="p1">洁净渴能白净水，净水喝的放心，超高性价比，科技乐趣...</p>
+                		<p class="p2">来自于 linhai哥 的评价</p>
+                		<p class="p3 clearfix">
+                			<span class="fl">小米净水器</span>
+                    		<b class="fl">1299元</b>
+                        </p>
+                	</div>
+            	</a>
+            	<a href="javascript:;" class="fl">
+            		<img src="img/main7_b2.png"/>
+                    <div>
+                		<p class="p1">洁净渴能白净水，净水喝的放心，超高性价比，科技乐趣...</p>
+                		<p class="p2">来自于 linhai哥 的评价</p>
+                		<p class="p3 clearfix">
+                			<span class="fl">小米净水器</span>
+                    		<b class="fl">1299元</b>
+                        </p>
+                	</div>
+            	</a>
+            	<a href="javascript:;" class="fl">
+            		<img src="img/main7_b3.png"/>
+                    <div>
+                		<p class="p1">洁净渴能白净水，净水喝的放心，超高性价比，科技乐趣...</p>
+                		<p class="p2">来自于 linhai哥 的评价</p>
+                		<p class="p3 clearfix">
+                			<span class="fl">小米净水器</span>
+                    		<b class="fl">1299元</b>
+                        </p>
+                	</div>
+            	</a>
+            	<a href="javascript:;" class="fl">
+            		<img src="img/main7_b4.png"/>
+                    <div>
+                		<p class="p1">洁净渴能白净水，净水喝的放心，超高性价比，科技乐趣...</p>
+                		<p class="p2">来自于 linhai哥 的评价</p>
+                		<p class="p3 clearfix">
+                			<span class="fl">小米净水器</span>
+                    		<b class="fl">1299元</b>
+                        </p>
+                	</div>
+            	</a>
+        	</div>
+        </div>
+        
+        <!----main8开始----->
+        <div class="main8 clearfix">
+        	<div class="title"><span>为你推荐</span></div>
+            <div class="con clearfix">
+            	<a href="javascript:;" class="num1 fl" style="background:url(img/main8_b1.png)">
+                	<p class="type" style="color:#ffac13;">图书</p>
+                    <p class="name">古董局中局4(大结局)</p>
+                    <p class="detail">先于纸书，抢先发布，揭开全部悬念，马搏庸《古董局中局》系列大结</p>
+                    <p class="price">12元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main8_b2.png)">
+                	<p class="type" style="color:#b8ca4e;">图书</p>
+                    <p class="name">古董局中局4(大结局)</p>
+                    <p class="detail">先于纸书,抢先发布,揭开全部悬念，马搏庸《古董局中局》系列大结局</p>
+                    <p class="price">12元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main8_b3.png)">
+                	<p class="type" style="color:#e53935;">图书</p>
+                    <p class="name">古董局中局4(大结局)</p>
+                    <p class="detail">先于纸书,抢先发布,揭开全部悬念，马搏庸《古董局中局》系列大结局</p>
+                    <p class="price">12元</p>
+                </a>
+                <a href="javascript:;" class="fl" style="background:url(img/main8_b4.png)">
+                	<p class="type" style="color:#21a2f5;">图书</p>
+                    <p class="name">古董局中局4(大结局)</p>
+                    <p class="detail">先于纸书,抢先发布,揭开全部悬念，马搏庸《古董局中局》系列大结局</p>
+                    <p class="price">12元</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="main9 clearfix">
+        	<div class="title"><span>视频</span></div>
+            <div class="con clearfix">
+            	<a href="javascript:;" class="num1 fl">
+                	<img src="img/main9_b1.png"/>
+                    <p class="p1">小米2015新品发布会（雷军深情告白）</p>
+                    <p class="p2">雷总深情告白：我所有的向往</p>
+                </a>
+                <a href="javascript:;" class="fl">
+                	<img src="img/main9_b2.png"/>
+                    <p class="p1">小米2015新品发布会（雷军深情告白）</p>
+                    <p class="p2">雷总深情告白：我所有的向往</p>
+                </a>
+                <a href="javascript:;" class="fl">
+                	<img src="img/main9_b3.png"/>
+                    <p class="p1">小米2015新品发布会（雷军深情告白）</p>
+                    <p class="p2">雷总深情告白：我所有的向往</p>
+                </a>
+                <a href="javascript:;" class="fl">
+                	<img src="img/main9_b4.png"/>
+                    <p class="p1">小米2015新品发布会（雷军深情告白）</p>
+                    <p class="p2">雷总深情告白：我所有的向往</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!----content结束---->
+    
+    <!-----foot开始---->
+    <div class="foot">
+    	<ul class="foot1 clearfix">
+        	<li class="fl clearfix">
+            	<table>
+                	<tr>
+                    	<td>
+            				<i style="background:url(img/1xs.png) no-repeat;"></i>
+                			<span>1小时快修服务</span>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li class="fl">
+            	<table>
+                	<tr>
+                    	<td>
+            				<i style="background:url(img/7t.png) no-repeat;"></i>
+                			<span>7天无理由退货</span>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            <li class="fl">
+            	<table>
+                	<tr>
+                    	<td>
+            				<i style="background:url(img/15t.png) no-repeat;"></i>
+                			<span>15天免费换货</span>
+                        </td>
+                    </tr>
+                </table>
+            	
+            </li>
+            <li class="fl">
+            	<table>
+                	<tr>
+                    	<td>
+            				<i style="background:url(img/m150.png) no-repeat;"></i>
+                			<span>满150包邮</span>
+                        </td>
+                    </tr>
+                </table>
+            	
+            </li>
+            <li class="fl cm">
+            	<table>
+                	<tr>
+                    	<td>
+            				<i style="background:url(img/520.png) no-repeat;"></i>
+                			<span>520余家售后网点</span>
+                        </td>
+                    </tr>
+                </table>
+            	
+            </li>
+        </ul>
+        
+        <div class="foot2 clearfix">
+        	<dl class="fl" style="margin-left:100px;">
+            	<dt>帮助中心</dt>
+                <dd>购物指南</dd>
+                <dd>支付方式</dd>
+                <dd>配送方式</dd>
+            </dl>
+            <dl class="fl">
+            	<dt>帮助中心</dt>
+                <dd>购物指南</dd>
+                <dd>支付方式</dd>
+                <dd>配送方式</dd>
+            </dl>
+            <dl class="fl">
+            	<dt>帮助中心</dt>
+                <dd>购物指南</dd>
+                <dd>支付方式</dd>
+                <dd>配送方式</dd>
+            </dl>
+            <dl class="fl">
+            	<dt>帮助中心</dt>
+                <dd>购物指南</dd>
+                <dd>支付方式</dd>
+                <dd>配送方式</dd>
+            </dl>
+            <dl class="fl">
+            	<dt>帮助中心</dt>
+                <dd>购物指南</dd>
+                <dd>支付方式</dd>
+                <dd>配送方式</dd>
+            </dl>
+            <div class="number fr">
+            	<p class="p1">400-100-5678</p>
+                <p class="p2">周一-周日8:00-18:00</p>  
+                <p class="p3">（仅收市话费）</p>
+                <div class="kf clearfix">
+                	<i class="fl"></i>
+                    <span class="fl">24小时在线客服</span>
+                </div>          	
+            </div>
+        </div>
+        
+        <div class="foot3 clearfix">
+        	<div class="left fl">
+            	<i class="logo fl"></i>
+                <div class="fl">
+                	<ul class="clearfix">
+                    	<li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="fl">小米网</li>
+                        <li class="last fl">小米网</li>     
+                    </ul>
+                    <p>@mi.com京ICP110507号 京ICF备10046444号 京公安网</p>
+                </div>
+             </div>
+             <ul class="right fr">
+                 <li class="fl clearfix">
+                 	<div class="img fl"><img src="img/cx.png"/></div>
+                    <div class="text fl">
+                    	<p class="p1">诚信网站</p>
+                        <p>示范企业</p>
+                    </div>
+                 </li>
+                 <li class="fl clearfix">
+                 	<div class="img fl"><img src="img/kx.png"/></div>
+                    <div class="text fl">
+                    	<p class="p1">诚信网站</p>
+                        <p>示范企业</p>
+                    </div>
+                 </li>
+                 <li class="fl clearfix">
+                 	<div class="img fl"><img src="img/ws.png"/></div>
+                    <div class="text fl">
+                    	<p class="p1">诚信网站</p>
+                        <p>示范企业</p>
+                    </div>
+                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

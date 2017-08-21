@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+
+    </style>
+    <script src="echarts.js"></script>
+    <script>
+        //放核心数据
+        var options={
+            tooltip:{
+
+            },
+            title:{
+                text:'所有站点访问来源'
+            },
+            legend:{
+                data:['直接访问','SEM推广','SEO','博客','其他']
+            },
+            series: [{				//只有一个项目，因为只有一个饼
+                name: '主站',
+                center:['25%','25%'],
+                radius:['10%','20%'],
+                type: 'pie',				//类型：饼图
+                data: [				//饼图数据
+                    {value: 359, name: '直接访问'},
+                    {value: 217, name: 'SEM推广'},
+                    {value: 96, name: 'SEO'},
+                    {value: 30, name: '博客'},
+                    {value: 19, name: '其他'}
+                ]
+            },{				//只有一个项目，因为只有一个饼
+                name: '新闻频道',
+                center:['75%','25%'],
+                radius:['10%','20%'],
+                type: 'pie',				//类型：饼图
+                data: [				//饼图数据
+                    {value: 359, name: '直接访问'},
+                    {value: 217, name: 'SEM推广'},
+                    {value: 96, name: 'SEO'},
+                    {value: 30, name: '博客'},
+                    {value: 19, name: '其他'}
+                ]
+            },{				//只有一个项目，因为只有一个饼
+                name: '体育频道',
+                center:['25%','75%'],
+                radius:['10%','20%'],
+                type: 'pie',				//类型：饼图
+                data: [				//饼图数据
+                    {value: 359, name: '直接访问'},
+                    {value: 217, name: 'SEM推广'},
+                    {value: 96, name: 'SEO'},
+                    {value: 30, name: '博客'},
+                    {value: 19, name: '其他'}
+                ]
+            },{				//只有一个项目，因为只有一个饼
+                name: '女人频道',
+                center:['75%','75%'],
+                radius:['10%','20%'],
+                type: 'pie',				//类型：饼图
+                data: [				//饼图数据
+                    {value: 359, name: '直接访问'},
+                    {value: 217, name: 'SEM推广'},
+                    {value: 96, name: 'SEO'},
+                    {value: 30, name: '博客'},
+                    {value: 19, name: '其他'}
+                ]
+            }]
+        };
+
+        window.onload=function(){
+            var oDiv=document.getElementById('div1');
+
+            //创建一个eacharts对象
+            var charts=echarts.init(oDiv);
+
+            //charts需要跟options结合
+            charts.setOption(options);
+        };
+    </script>
+</head>
+<body>
+    <div id="div1" style="width:800px; height:600px;"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

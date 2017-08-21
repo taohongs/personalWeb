@@ -1,0 +1,1 @@
+@keyframes runLogo{to{top:20px;left:50px;margin:0;width:60px;height:20px}}@keyframes runOp{to{opacity:1}}@keyframes runRow{from{opacity:.7}to{opacity:1}}@keyframes runName{from{transform:translateX(0)}to{transform:translateX(-800px)}}@keyframes runToL{to{margin-left:11%}}@keyframes runToR{to{margin-right:5%}}@keyframes runJs{to{right:10px}}@keyframes runHide{to{opacity:0}}
