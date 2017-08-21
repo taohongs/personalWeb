@@ -7,8 +7,13 @@ window.onload = function() {
         f = b.querySelector(".works"),
         g = document.documentElement.clientWidth,
         h = document.documentElement.clientHeight;
-    a.style.width = g + "px", a.style.height = h + "px", a.style.backgroundSize = g + "px " + h + "px", b.style.width = g + "px";
-    for (var i = b.children, j = d.querySelector(".btn"), k = 1; k < i.length; k++) i[k].style.width = g + "px", i[k].style.height = h + "px", i[k].style.backgroundSize = g + "px " + (h + 20) + "px";
+    a.style.width = g + "px",
+    a.style.height = h + "px",
+    a.style.backgroundSize = g + "px " + h + "px",
+    b.style.width = g + "px";
+    for (var i = b.children, j = d.querySelector(".btn"), k = 1; k < i.length; k++) {
+        i[k].style.width = g + "px", i[k].style.height = h + "px", i[k].style.backgroundSize = g + "px " + (h + 20) + "px";
+    }
     var l = a.querySelector(".logo"),
         m = a.querySelector(".title"),
         n = a.querySelector(".row");
